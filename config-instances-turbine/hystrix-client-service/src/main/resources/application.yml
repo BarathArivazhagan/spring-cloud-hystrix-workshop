@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hystrix-client-service
+
+server:
+  port: 9502
+
+management:  
+  endpoints:
+    web:
+      exposure:
+        include: "*"

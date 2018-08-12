@@ -1,0 +1,17 @@
+
+turbine:
+  aggregator:
+      clusterConfig: hystrix-client-service-dev  
+  instanceInsertPort: false   
+  instanceUrlSuffix: 
+    default: /actuator/hystrix.stream   
+    hystrix-client-service-dev: /actuator/hystrix.stream
+  ConfigPropertyBasedDiscovery:
+     default:
+       instances: hystrix-client-service-io.cfapps.io
+     hystrix-client-service-dev:
+        instances: hystrix-client-service-io.cfapps.io
+
+
+  
+  

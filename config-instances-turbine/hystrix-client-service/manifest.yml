@@ -1,0 +1,7 @@
+---
+applications:
+- name: hystrix-client-service
+  memory: 1G
+  host: hystrix-client-service-io
+  path: target/hystrix-client-service-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack

@@ -1,0 +1,14 @@
+
+turbine:
+  aggregator:
+      clusterConfig: hystrix-client-service-local  
+  instanceInsertPort: false   
+  instanceUrlSuffix:    
+    hystrix-client-service-local: /actuator/hystrix.stream
+  ConfigPropertyBasedDiscovery:
+    hystrix-client-service-local:
+        instances: localhost:9502
+
+
+  
+  

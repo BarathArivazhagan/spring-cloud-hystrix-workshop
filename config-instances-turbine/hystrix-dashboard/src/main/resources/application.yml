@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: hystrix-dashboard
+
+server:
+  port: 9505
+
+eureka:
+  client:
+    enabled: false
+
+
+management:
+  endpoint:
+    env:
+      post:
+        enabled: true
+    hystrix:
+      stream:
+        enabled: true
+    restart:
+      enabled: true
+    refresh:
+      enabled: true
+    service-registry:
+      enabled: true
+    features:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+ 
