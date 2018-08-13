@@ -10,3 +10,13 @@ management:
     web:
       exposure:
         include: "*"
+hystrix:
+  threadpool:
+    thread20:
+      coreSize: 20
+    thread30:
+      coreSize: 30
+    thread40:
+      coreSize: 40
+    thread50:
+      coreSize: 50
